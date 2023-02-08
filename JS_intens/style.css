@@ -1,0 +1,21 @@
+img {
+    width: 300px;
+    margin: 10px 170px;
+}
+span{
+    font-size: 20px;
+}
+.Name{
+    color: red;
+}
+#skill {
+    color: green;
+}
+h1{
+    padding: 0px;
+    text-align: center;
+    line-height: 40px;
+}
+h2 {
+    text-align: center;
+}
