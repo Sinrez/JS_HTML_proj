@@ -9,11 +9,42 @@ header{
     height: 50px;
 }
 
+nav{
+    border: 1px dotted black;
+    /* width: max-content; */
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+
+}
+nav > a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 0 30px;
+
+}
+
+.about_me{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.about_me img{
+    width: 300px;
+}
+
+footer{
+    text-align: center;
+}
 
 img {
     width: 500px;
     margin: 10px 450px;
+    /* size: 30%; */
 }
 span{
     font-size: 20px;
