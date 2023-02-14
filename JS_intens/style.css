@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.my_game{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 header{
     background-color: lightgray;
     height: 50px;
