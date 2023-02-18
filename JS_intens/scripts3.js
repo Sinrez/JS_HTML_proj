@@ -118,6 +118,22 @@
 
 // }
 
+//declaration functions
+// function screan(a,b){
+//     // alert("AAAAAAA")
+//     return a * b
+// }
+
+// console.log(screan(5,6))
+
+
+// const wowScreen = function(){
+//     alert("WOOOOOW")
+// }
+
+// const arrow = () =>{
+//     alert("arrow is in the sky")
+// }
 
 const randomValue1 = (Math.random() * 100).toFixed(0)
 const randomValue2 = (Math.random() * 100).toFixed(0)
