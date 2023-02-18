@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Mynerve', cursive;
 }
 
 .my_game{
@@ -19,7 +23,7 @@ header{
 nav{
     border: 1px dotted black;
     /* width: max-content; */
-    height: 50px;
+    height: inherit;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -38,6 +42,15 @@ nav > a{
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
+}
+
+.about_us-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us-description * {
+    padding: 5px;
 }
 
 .about_me img{

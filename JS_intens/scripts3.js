@@ -135,18 +135,66 @@
 //     alert("arrow is in the sky")
 // }
 
-const randomValue1 = (Math.random() * 100).toFixed(0)
-const randomValue2 = (Math.random() * 100).toFixed(0)
-const isPlus = Math.random() > 0.5
-console.log(randomValue1)
+const getRandomNumInRange = (min, max) => {
+    const randomNum = (Math.random() * (max-min) + min).toFixed(0)
+    return randomNum
+}
+
+const getTask = () => {
+    // const randomNum1 = getRandomNumInRange(0,100)
+    // const randomNum2 = getRandomNumInRange(0,100)
+
+    // let symbol
+    // if (Math.random() > 0.5){
+    //     symbol = "+"
+    // } else {
+    //     symbol ="-"
+    // }
+    const symbol = (Math.random() > 0.5) ? "+" : "-"
+    const task =`${getRandomNumInRange(0,100)} ${symbol} ${getRandomNumInRange(0,100)}`
+    gameState.rightAnswer = eval(task)
+    return task
+}
+
+
 
 const gameElem = document.getElementById("mygame").children
 
-if (isPlus){
-    gameElem[1].innerText = `${randomValue1}+${randomValue2}`
-} else {
-    gameElem[1].innerText = `${randomValue1}-${randomValue2}`
+const title = gameElem[0]
+const userTask = gameElem[1]
+const userAnswer = gameElem[2]
+const btnGame = gameElem[3]
 
+const gameState = {
+    taskInProcess: false,
+    rightAnswer: null,
 }
 
-console.log(gameElem)
+const toggleGameState = () => {
+    gameState.taskInProcess = !gameState.taskInProcess
+}
+
+btnGame.onclick = () =>{
+    if (!gameState.taskInProcess){
+        title.innerText ="Игра началась!"
+        userAnswer.value = null
+        // generate task and answwer
+        const task = getTask()
+        userAnswer.hidden = false
+        btnGame.innerText = "Проверить!"
+        toggleGameState()
+        //show task to user
+        userTask.innerText = task
+        //change button and state
+    } else {
+        // check user answer with correctly
+        const isRight = gameState.rightAnswer == userAnswer.value
+        // change state and print result
+        userTask.innerText = userTask.innerText + " = " + gameState.rightAnswer
+        title.innerText = (isRight) ? "Вы победили!" : "Вы проиграли!"
+        //change button and state
+        btnGame.innerText = "Начать заново!"
+        toggleGameState()
+
+    }
+}
