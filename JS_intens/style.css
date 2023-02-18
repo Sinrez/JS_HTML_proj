@@ -55,6 +55,8 @@ nav > a{
 
 .about_me img{
     width: 300px;
+    object-fit: cover;
+    object-position: top;
 }
 
 footer{

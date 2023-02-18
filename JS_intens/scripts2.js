@@ -12,13 +12,19 @@
 // const num1 = 75
 // alert(num1)
 
-const obj = {
-    name: "RRR",
-    age: 100500,
-    isHappy: true
-}
-console.log(obj.name)
-console.log(obj['age'])
+// const obj = {
+//     name: "RRR",
+//     age: 100500,
+//     isHappy: true
+// }
+// console.log(obj.name)
+// console.log(obj['age'])
 
-obj.job = 'Google'
-console.log(obj)
+// obj.job = 'Google'
+// console.log(obj)
+
+for(let i = 10; i < 35; i += 5) {
+
+    console.log(i);
+
+}
