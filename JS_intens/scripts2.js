@@ -23,8 +23,34 @@
 // obj.job = 'Google'
 // console.log(obj)
 
-for(let i = 10; i < 35; i += 5) {
+// for(let i = 10; i < 35; i += 5) {
 
-    console.log(i);
+//     console.log(i);
+
+// }
+
+// console.log( test(3, 2))
+
+// function test(a, b) {
+
+//     let pow = a ** b
+
+// }
+
+// console.log( test(3, 2))
+
+// const test = function(a, b) {
+
+//     let pow = a ** b
+
+// }
+
+const testValue = "string"
+
+function test(str) {
+
+    return str + null
 
 }
+
+console.log(test(testValue))
