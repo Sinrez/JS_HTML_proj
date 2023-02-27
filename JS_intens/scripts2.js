@@ -45,12 +45,68 @@
 
 // }
 
-const testValue = "string"
+// const testValue = "string"
 
-function test(str) {
+// function test(str) {
 
-    return str + null
+//     return str + null
+
+// }
+
+// console.log(test(testValue))
+
+// const changeFunc = (num) => {
+
+//     const result = (num / (Math.random() * 10)).toFixed
+
+// }
+
+// console.log(changeFunc(47))
+
+// const userText = prompt("give me number!")
+
+// // пользователь отменил ввод
+
+// console.log(userText - "7")
+
+// const num = 21
+
+// const result = (!null) ? (21 % 5) : ( 21 % 3)
+
+// console.log(result)
+
+// console.log(getArr())
+
+// function getArr() {
+
+//     const result = []
+
+//     for (let i = 0; i < 3; i++) {
+
+//         result.push(i + 5)
+
+//     }
+
+//     return result
+
+// }
+
+// console.log(getRandomLessTen())
+
+// function getRandomLessTen() {
+
+//     const num = 0
+
+//     num += (Math.random * 10).toFixed()
+
+//     return num
+
+// }
+
+const getRandomAnswer = (question) => {
+
+    return (Math.random() > 0.5) ? "YES!" : "No("
 
 }
 
-console.log(test(testValue))
+console.log("Всё будет хорошо?")
